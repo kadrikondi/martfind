@@ -1,0 +1,37 @@
+{
+  "name": "martfind",
+  "version": "1.0.0",
+  "description": "Find Supper Market in your local areas at ease",
+  "main": "app.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kadrikondi/martfind.git"
+  },
+  "keywords": [
+    "Suppermarket"
+  ],
+  "author": "Idris Abdulkadri Kondi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kadrikondi/martfind/issues"
+  },
+  "homepage": "https://github.com/kadrikondi/martfind#readme"
+}
