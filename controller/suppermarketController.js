@@ -47,6 +47,8 @@ export const createSupermarket = async (req, res) => {
   }
 };
 // default createSupermarket;
+// uploadpicture
+// add likes
 
 // Update a supermarket by ID
 // Update a supermarket by ID
@@ -59,7 +61,7 @@ export const updateSupermarket = async (req, res) => {
       return res.status(400).json({ error: "Invalid supermarket ID" });
     }
 
-    // Validate user input (for example, ensuring that required fields are present)
+    // Validate user input (for example, ensuring that required fields are present)user
     const { name, phone, email, street, city, state, whatsappno } = req.body;
     if (
       !name ||

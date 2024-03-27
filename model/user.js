@@ -12,5 +12,5 @@ const User = mongoose.Schema({
   supermarket: [{ type: mongoose.Schema.Types.ObjectId, ref: "supermarket" }],
 });
 
-// Exporting the model directly
+// Exporting the model directly ok
 export default mongoose.model("User", User);
