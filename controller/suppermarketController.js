@@ -3,7 +3,8 @@ import SUP from "../model/supermarket";
 export const createSupermarket = async (req, res) => {
   try {
     // Extract necessary fields from the request body
-    const { name, phone, email, street, city, state, whatsappno } = req.body;
+    const { name, phone, email, street, city, state, whatsappno, building } =
+      req.body;
 
     // Get createdBy from request params
     const createdBy = req.params.id;
@@ -16,7 +17,8 @@ export const createSupermarket = async (req, res) => {
       !street ||
       !city ||
       !state ||
-      !whatsappno
+      !whatsappno ||
+      !building
     ) {
       return res.status(400).json({ error: "All fields are required" });
     }
@@ -29,6 +31,7 @@ export const createSupermarket = async (req, res) => {
       street,
       city,
       state,
+      building,
       whatsappno,
       createdBy,
     });

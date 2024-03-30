@@ -4,7 +4,7 @@ const User = mongoose.Schema({
   email: { type: String },
   password: { type: String },
   gender: { type: String },
-  photo: { type: String },
+  image: { type: String },
   phoneno: { type: String },
   verified: { type: Boolean, default: false },
   createAt: { type: Date, default: Date.now() },

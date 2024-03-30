@@ -6,6 +6,7 @@ const Supermarket = mongoose.Schema({
   email: { type: String },
   street: { type: String },
   city: { type: String },
+  building: { type: String },
   state: { type: String },
   whatsappno: { type: String },
   images: [{ type: String }], // Array of image URLs
